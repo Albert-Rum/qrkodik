@@ -1,0 +1,30 @@
+﻿<Window x:Class="kukuruzovv.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:kukuruzovv"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="275">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox HorizontalAlignment="Center" Height="85" TextWrapping="Wrap" VerticalAlignment="Top" Width="168" Margin="0,230,0,0"/>
+        <Image HorizontalAlignment="Left" Margin="67,50,0,237" Width="145" MaxHeight="150" MaxWidth="150"/>
+        <Border 
+            Margin="0,19,0,264"
+            BorderBrush="White" BorderThickness="1" HorizontalAlignment="Center" Width="157" >
+            <Image 
+                x:Name="image_qr" Margin="-1,0,-2,-2"/>
+        </Border>
+        <Button 
+            x:Name="btn_generate"
+            Click="btn_generate_Click"
+            Content="Сгенерировать QR CODE"
+            HorizontalAlignment="Center"
+            Margin="0,332,0,65"
+            Height="37" Width="164"/>
+    </Grid>
+</Window>
